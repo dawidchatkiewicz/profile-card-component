@@ -1,0 +1,120 @@
+:root {
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+
+	--dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 0.1px);
+	background-color: var(--dark-cyan);
+	overflow: hidden;
+}
+
+.main {
+	background-color: #fff;
+	width: 100%;
+	max-width: 500px;
+	border-radius: 0.5rem;
+}
+
+.main section:first-child {
+	position: relative;
+}
+
+.main section:first-child img {
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.main section:first-child div img {
+	border-radius: 50%;
+	width: 8rem;
+	position: absolute;
+	left: 50%;
+	bottom: -4rem;
+	transform: translateX(-50%);
+	border: 5px solid #fff;
+}
+
+.main section:nth-child(2) {
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.main section:nth-child(2) h1 {
+	color: var(--very-dark-desaturated-blue);
+}
+
+.main section:nth-child(2) span {
+	color: var(--dark-grayish-blue);
+	font-weight: 400;
+}
+
+.main section:nth-child(2) p {
+	color: var(--dark-grayish-blue);
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.main section:last-child {
+	border-top: 1px solid hsl(227, 10%, 46%, 0.3);
+	padding: 1.6rem 4rem;
+}
+
+.main section:last-child ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main section:last-child ul li {
+	font-weight: 700;
+	color: var(--very-dark-desaturated-blue);
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.main section:last-child ul li span {
+	display: block;
+	color: var(--dark-gray);
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	margin-top: 0.4rem;
+}
+
+.bg-top {
+	position: absolute;
+	top: -50%;
+	left: -30%;
+	z-index: -1;
+}
+
+.bg-bottom {
+	position: absolute;
+	bottom: -50%;
+	right: -30%;
+	z-index: -1;
+}
